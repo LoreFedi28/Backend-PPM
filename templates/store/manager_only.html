@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Area Riservata al Manager</h2>
+  <p>Benvenuto {{ request.user.username }}! Questa sezione è visibile solo agli utenti con il gruppo "Manager".</p>
+{% endblock %}
